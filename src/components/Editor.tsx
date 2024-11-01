@@ -16,7 +16,7 @@ export function CodeEditor({ language }: CodeEditorProps) {
   const executeCode = () => {
     setLoading(true);
     setOutput("Executing...");
-    fetch("http://localhost:8000/execute", {
+    fetch("http://37.27.11.226:8000", {
       method: "POST",
       body: JSON.stringify({
         language: language,
