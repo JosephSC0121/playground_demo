@@ -30,7 +30,7 @@ export function CodeEditor({ language }: CodeEditorProps) {
         className="rounded bg-indigo-600 px-3 py-2 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
         onClick={() => {
           setOutput("Executing...");
-          fetch("http://127.0.0.1:8000/execute", {
+          fetch("http://37.27.11.226:8000/execute", {
             method: "POST",
             body: JSON.stringify({
               language: language,
