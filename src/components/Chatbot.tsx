@@ -21,7 +21,7 @@ export default function Chatbot() {
   const handleSubmit = async () => {
     setLoading(true)
     try {
-      const res = await axios.post('/chat/chat', { question })
+      const res = await axios.post('https://api-playground.josephsilvacasas.com/chat/chat', { question })
       setResponse(res.data.response.content)
     } catch (error) {
       console.error('Error:', error)
