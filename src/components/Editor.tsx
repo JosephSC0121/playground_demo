@@ -40,14 +40,13 @@ export function CodeEditor({ language }: CodeEditorProps) {
     <div className="flex flex-col w-full h-full">
       <div className="w-full flex flex-col gap-2">
         <div className="flex w-full justify-end align-middle gap-2">
-          {/* Puedes añadir botones o elementos aquí si lo necesitas */}
         </div>
       </div>
       <Editor
-        height="80vh" // Mantén este valor o ajusta según sea necesario
+        height="80vh" 
         language={language}
         theme="vs-dark"
-        className="max-w-full w-full h-full" // Asegúrate de que ocupe todo el ancho y alto
+        className="max-w-full w-full h-full"
         value={code}
         onChange={(value) => setCode(value || '')}
       />
