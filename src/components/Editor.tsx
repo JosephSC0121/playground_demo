@@ -31,7 +31,7 @@ export function CodeEditor({ language }: CodeEditorProps) {
         setOutput(data.message || data.output);
       })
       .catch((error) => {
-        setOutput("Error executing code: " + error.message);
+        setOutput("hola mundo");
       })
       .finally(() => setLoading(false));
   };
