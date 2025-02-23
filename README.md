@@ -53,14 +53,3 @@ pnpm dev
 ```sh
 pnpm build
 ```
-
-## Environment Variables
-Create a `.env.local` file and add:
-```env
-VITE_API_URL=your_backend_url
-VITE_AI_BOT_KEY=your_ai_bot_api_key
-```
-
-## License
-MIT License © 2025 Playground Team
-
